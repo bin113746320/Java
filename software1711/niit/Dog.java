@@ -24,6 +24,13 @@ public class Dog extends Pet{
 				+super.getLove()+" 我的品种："+this.strain);
 	}
 	
+	public String toString(){
+		String s=new String();
+		s="大家好！ "+"我的名字是 "+super.getName()+" 我的健康值 "+super.getHealth()+" 亲密度 "
+				+super.getLove()+" 我的品种："+this.strain;
+		return s;
+	}
+	
 	public void eat(){
 		if(getHealth()>100){
 			System.out.println("狗不饿smile");

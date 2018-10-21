@@ -22,6 +22,13 @@ public class Penguin extends Pet {
 		System.out.println("大家好！ "+"我的名字是 "+super.getName()+" 我的健康值 "+super.getHealth()+" 亲密度 "
 				+super.getLove()+" 我的性别："+this.sex);
 	}
+	public String toString()
+	{
+		String S="大家好！ "+"我的名字是 "+super.getName()+" 我的健康值 "+super.getHealth()+" 亲密度 "
+				+super.getLove()+" 我的性别："+this.sex;
+		return S;
+	}
+	
 	public void eat(){
 		if(getHealth()>100){
 			System.out.println("企鹅不饿smile");
